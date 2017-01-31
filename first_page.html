@@ -1,0 +1,475 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>NaatyaGuru</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--link rel="html" href="LoginSignup.html"-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+      <link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+      <script src="js/modernizr.js"></script> <!-- Modernizr --> <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+      <link rel="stylesheet" href="css/style.css"> <!-- Gem style -->
+      <script src="js/modernizr.js"></script> <!-- Modernizr --> 
+      
+      <style type="text/css">
+        body {
+          width: 100%;
+          overflow-x: hidden;
+        }
+        
+        .natya-header {
+          background-color: rgba(255, 166, 0, 1);
+        }
+        
+        .natya-header a {
+          font-family:Montserrat;
+          color: white;
+        }
+        
+        h1 {
+          text-align: center;
+          color: red;
+          font-family: Tw Cen MT;
+        }
+
+        div.center {
+         text-align: center;
+         font-family: Montserrat;
+        }
+        
+        .glyphicon  {
+         font-size: 90px;
+        }
+        
+        header  {
+          background-color: rgba(255,166,0,0.4);
+          height: 60vh;
+          background-position: center;
+          background-size: contain;
+        }
+        
+        .Learning {
+          text-align: center;
+          font-family: Montserrat;
+          font-size: 150%;
+          color: rgba(230,0,25,0.7);
+        }
+
+        .btn-group {
+          transform: translate(450%,280%);
+          border-radius: 20px;
+          padding: 20px;
+          margin-right: 50px;
+          margin-top: 10px;
+          font-size: 100%;
+        }
+
+        .new {
+          color: rgba(255,0,0,1);
+          text-align: center;
+          font-size: 150%;
+        }
+
+        .button-awesome .btn {
+          border : 1px solid #e67e22;
+          padding: 10px 30px;
+          color: #e67e22;
+          text-decoration: none;
+          margin: 0 20px;
+          display: block;
+        }
+        .button-awesome .btn:hover {
+          background-color: #e67e22;
+          color: white;
+          transition: all 0.3s ease-in; 
+        }
+
+        .button {
+          margin-top: 50px;
+        }
+
+        .btn-half {
+          font-size: 120%;
+        }
+
+        .btn-full:hover {
+          background-color: rgb(255,0,0);
+          color: white;
+          transition: all 0.5s ease-in; 
+        }
+
+        .credits  {
+          background-color: rgba(255,166,0,1);
+          height: 150px;
+          background-position: center;
+          background-size: contain;
+          word-spacing: 20px;
+          text-align: center;
+          color: white;
+        }
+        
+        .dance-imgs .thumbnail img {
+          width: 100%;
+        }
+        .parallax {
+        /* The image used */
+        background-image: url("https://s3-ap-southeast-1.amazonaws.com/tv-prod/seoSearchImages/669-dance-teachers.jpg");
+        /* Set a specific height */
+        min-height: 450px; 
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        position : initial;
+        background-repeat: no-repeat;
+        background-size: initial;
+        overflow-x: none;
+        }
+        .button {
+        border-radius: 4px;
+        background-color: rgba(230,0,25,0.85);
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 20px;
+        padding: 15px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        }
+
+        .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        }
+
+        .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+        }
+
+        .button:hover span {
+        padding-right: 25px;
+        }
+
+        .button:hover span:after {
+        opacity: 1;
+        right: 0;
+        }
+      </style>
+    </head>
+    
+    <body>
+  
+      <ul class="nav nav-tabs natya-header">
+      	<li role="presentation"> <a href="#">Catalog</a></li>
+      	<li role="presentation"> <a href="#">Courses</a></li>
+      	<li role="presentation"> <a href="#">About</a></li>
+        <li role="presentation" style="transform: translate(1530%,0);"> <a href="#">Help</a></li>
+      </ul>
+      <div class="container-fluid col-lg-12">
+      	<div class="page header">  
+          <div class="parallax">
+            <img src="NaatyaGuruLogo.png" width=35% height=30% align="right">
+            <div class="btn-group" role="group" style="position: absolute;left:-60px;top: -100px;">
+                <a class="cd-signin"><button type="button" class="btn-lg" style="background-color: rgba(0,0,0,0);">Log In</button></a>
+                <a class="cd-signup"><button type="button" class="btn-lg" style="background-color: rgb(255,166,0);">Sign Up</button></a>
+            </div>
+            <button class="button" style="position:relative;left: 1000px;top: 270px;"><span>Search</span></button>
+          </div>
+          <div style="height:40px;background-color:transparent;">
+        </div>
+      </div>
+      
+      <br>
+
+      <div class="container">
+        <center>
+          	<div class="col-md-4">
+              <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
+              <p style="font-family: Montserrat"><b>Online Dance Lessons</b></p>
+            </div>
+
+            <div class="col-md-4">
+              <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+              <p style="font-family: Montserrat"><b> Unlimited Resources</b></p>
+            </div>
+            
+            <div class="col-md-4"> 
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+              <p style="font-family: Montserrat"><b>Community</b></p>
+            </div> 
+        </center>
+      </div> 
+      <br><br>
+      <div class="container">
+        <center>
+          
+          <div class="col-md-4">
+            <p style="font-family: Montserrat">Access tutorials when you want,  from your computer tablet, or mobile device. Be inspired, learn new moves and keep fit.</p>
+          </div>
+
+          <div class="col-md-4">
+            <p style="font-family: Montserrat"> Easy-to-follow lessons in slow motion with instructor commentary and counts. Paid membership allows unlimited access</p>
+          </div>
+          
+          <div class="col-md-4">
+            <p style="font-family: Montserrat"> Create your FREE professional dance profile, make connections, promote your upcoming events and enjoy dance video staff picks.</p>
+          </div>
+      
+        </center>
+      </div>
+
+      <br><br><br>
+
+      <div class="new">
+        <p style="text-align: center;" style="font-family: Montserrat" style="font-weight: bolder;" >Genres In Vogue</p>
+      </div>
+      <br><br>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <a href="http://kickofjoy.com/wp-content/uploads/2014/02/kathak-dance.jpg" target="_blank">
+                <img src="http://kickofjoy.com/wp-content/uploads/2014/02/kathak-dance.jpg" alt="kathak" style="width:160%" style="transform: translate(50%,20%);">
+              <!--div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+              </div-->
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="http://3.bp.blogspot.com/-bVj69Fgiacg/TZyhzUkjVkI/AAAAAAAAAB8/JPVbAnlov7w/s1600/kathakali.jpg" alt="kathakali" style="width:150%">
+          </div>
+        </div>
+        <!--div class="col-md-3">
+          <div class="thumbnail">
+            <a href="http://www.indialine.com/travel/images/bharatnatyam.jpg" target="_blank">
+              <img src="http://www.indialine.com/travel/images/bharatnatyam.jpg" alt="Bharatanatyam" style="width:100%">
+              <div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+              </div>
+            </a>
+          </div>
+        </div-->
+        <div class="col-md-3">
+          <div class="thumbnail">
+            <img src="http://www.sikhfoundation.org/wp-content/uploads/2010/04/10-Bhangra.jpg" alt="Bhangra" style="width:190%">
+              <!--div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+              </div-->
+          </div>
+        </div>
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <img src="http://www.danceclassonline.in/images/mohiniattam2.jpg" alt=Mohiniattam style="width:150%">
+              <!--div class="caption">
+                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+              </div-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <br><br><br>
+      <header>
+        <br>
+
+        <div class="Learning">
+          <p>Learning At NaatyaGuru</p>
+        </div>
+        <br><br>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <img src="http://www.studiojdance.com.au/wp-content/uploads/2016/08/BharatanatyamFinal.jpg" alt="manipuri" style="width:100%">
+                  <div class="caption">
+                    <p style="font-family: Montserrat">Find video tutorials in various styles broken down the footwork and timing</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <img src="https://i.ytimg.com/vi/uN1ZGtsGlFg/maxresdefault.jpg" alt="Nature" style="width:100%">
+                  <div class="caption">
+                    <p style="font-family: Montserrat">A step by step journey with parallel comparison with the mentor’s video</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="thumbnail">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Computer_Keyboard_MOD_45155531.jpg" alt="reviews" style="width:100%">
+                  <div class="caption">
+                    <p style="font-family: Montserrat">Get reviews and ratings from mentors along with auto suggestions and tips</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </header>
+
+      <br><br><br>
+
+      <div class="new">
+        <p>Coming Soon...</p>
+      </div>
+      <br><br>
+      <div class="container">
+
+        <div class="row dance-imgs">
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <a href="" target="_blank">
+                <img class='img-responsive' src="95dc8e2140cadbfd2b0cfdbda7901be2.jpg" alt="kathak">
+              </a>
+            </div>
+          </div>
+        
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <img class='img-responsive' src="folk-dances-of-India.jpg" alt="kathakali">
+            </div>
+          </div>
+          
+          <div class="col-md-3">
+            <div class="thumbnail3">
+              <img class='img-responsive' src="Kalbelia Dance.jpg" alt="Bhangra">
+            </div>
+          </div>
+         
+
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <img class='img-responsive' src="manipuri.jpg" alt='Mohiniattam'>
+            </div>
+          </div>
+        </div>
+    </div> 
+    <br><br><br>
+    <div class="button-awesome container">
+      <center>
+        <div class="col-lg-6"><a href="" class="btn btn-lg btn-offer">Member Offers</a></div>
+        <div class="col-lg-6"><a href="" class="btn btn-lg btn-sub">Subscribe</a></div>
+      </center>
+    </div>
+    <br><br><br>
+    
+    <div class="credits">
+      <br><p style="font-size: 90%">Connect With Us</p><br>
+      <img src="Social.png" width=110 height="25" style="position:absolute;left:615px;bottom: 80px;"><br><br>
+      <p style="font-size: 75%">about support privacy terms&conditions sitemap contact brand</p>
+      <div class="logo" style="position: absolute;left:600px;bottom: 5px;">
+        <img src="Logo.png" width=180 height="45" align="right">
+      </div>
+    </div>
+
+    <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+      <div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+        <ul class="cd-switcher">
+          <li><a href="#0">Sign in</a></li>
+          <li><a href="#0">New account</a></li>
+        </ul>
+
+        <div id="cd-login"> <!-- log in form -->
+          <form class="cd-form">
+            <p class="fieldset">
+              <label class="image-replace cd-email" for="signin-email">E-mail</label>
+              <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+              <span class="cd-error-message">Error message here!</span>
+            </p>
+
+            <p class="fieldset">
+              <label class="image-replace cd-password" for="signin-password">Password</label>
+              <input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+              <a href="#0" class="hide-password">Hide</a>
+              <span class="cd-error-message">Error message here!</span>
+            </p>
+
+            <p class="fieldset">
+              <input type="checkbox" id="remember-me" checked>
+              <label for="remember-me">Remember me</label>
+            </p>
+
+            <p class="fieldset">
+              <input class="full-width" type="submit" value="Login">
+            </p>
+          </form>
+          
+          <p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+          <!-- <a href="#0" class="cd-close-form">Close</a> -->
+        </div> <!-- cd-login -->
+
+        <div id="cd-signup"> <!-- sign up form -->
+          <form class="cd-form">
+            <p class="fieldset">
+              <label class="image-replace cd-username" for="signup-username">Username</label>
+              <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+              <span class="cd-error-message">Error message here!</span>
+            </p>
+
+            <p class="fieldset">
+              <label class="image-replace cd-email" for="signup-email">E-mail</label>
+              <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+              <span class="cd-error-message">Error message here!</span>
+            </p>
+
+            <p class="fieldset">
+              <label class="image-replace cd-password" for="signup-password">Password</label>
+              <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+              <a href="#0" class="hide-password">Hide</a>
+              <span class="cd-error-message">Error message here!</span>
+            </p>
+
+            <p class="fieldset">
+              <input type="checkbox" id="accept-terms">
+              <label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+            </p>
+
+            <p class="fieldset">
+              <input class="full-width has-padding" type="submit" value="Create account">
+            </p>
+          </form>
+
+          <!-- <a href="#0" class="cd-close-form">Close</a> -->
+        </div> <!-- cd-signup -->
+
+        <div id="cd-reset-password"> <!-- reset password form -->
+          <p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+          <form class="cd-form">
+            <p class="fieldset">
+              <label class="image-replace cd-email" for="reset-email">E-mail</label>
+              <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+              <span class="cd-error-message">Error message here!</span>
+            </p>
+
+            <p class="fieldset">
+              <input class="full-width has-padding" type="submit" value="Reset password">
+            </p>
+          </form>
+
+          <p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+        </div> <!-- cd-reset-password -->
+        <a href="#0" class="cd-close-form">Close</a>
+      </div> <!-- cd-user-modal-container -->
+    </div> <!-- cd-user-modal -->
+
+ <script src="js/main.js"></script> <!-- Gem jQuery -->
+    </body>
+  </html>
+
+<script type="text/javascript">
+  
+</script>
